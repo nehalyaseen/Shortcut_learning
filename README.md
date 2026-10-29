@@ -1,0 +1,1 @@
+This repository is for paper "Hypotheses about shortcut learning don't generalise: rethinking approaches to systematic evaluation" published in NeurIPS 2026  Workshop, "Self-Evolving Diversity-Driven Search for Robust AI Systems"
