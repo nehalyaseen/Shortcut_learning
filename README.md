@@ -31,6 +31,7 @@ source activate denet
 
    Submit an experiment using the following syntax:
 ```bash
+cd my_slurm_outputs
 sbatch jupyter.sh <dataset> <model>
 ```
 
