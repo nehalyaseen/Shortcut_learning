@@ -1,35 +1,38 @@
-This repository is for paper "Hypotheses about shortcut learning don't generalise: rethinking approaches to systematic evaluation" published in NeurIPS 2026  Workshop, "Self-Evolving Diversity-Driven Search for Robust AI Systems"
+# Hypotheses about Shortcut Learning Don't Generalise: Rethinking Approaches to Systematic Evaluation
+
+This repository is for the paper presented at the NeurIPS 2026 Workshop on *Self-Evolving Diversity-Driven Search for Robust AI Systems*.
+
 
 Running Experiments on Iridis
 
-Experiments are submitted to the Iridis HPC cluster using SLURM. The job submission script Shortcut_learning/my_slurm_output/jupyter.sh loads the Conda module, activates the denet environment, and executes main.py with the specified dataset and model.
+Experiments are submitted to the Iridis HPC cluster using SLURM. The job submission script Shortcut_learning/my_slurm_output/jupyter.sh loads the conda module, activates the denet environment, and executes main.py with the specified dataset and model.
 
 ### 1. Clone the repository:
-
-    git clone https://github.com/nehalyaseen/Shortcut_learning.git
-    cd Shortcut_learning
-
+```bash
+git clone https://github.com/nehalyaseen/Shortcut_learning.git
+cd Shortcut_learning
+```
 ### 2. Create the Conda environment
- 
-    conda env create -f environment.yml
-
+```bash 
+conda env create -f environment.yml
+```
 ### 3. Environment Setup
 
   Activate the Conda environment:
-
-    conda activate denet
-    
+```bash
+conda activate denet
+```    
   On Iridis, the environment is activated by the SLURM script using:
-  
-    module load conda/python3
-    source activate denet
-
+```bash  
+module load conda/python3
+source activate denet
+```
 ### 4. Submit a SLURM job
 
    Submit an experiment using the following syntax:
-
-     sbatch jupyter.sh <dataset> <model>
-
+```bash
+sbatch jupyter.sh <dataset> <model>
+```
 
 **Supported datasets**
 
