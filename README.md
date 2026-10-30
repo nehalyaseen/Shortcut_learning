@@ -108,6 +108,6 @@ train: Training accuracy.
 
 val: Validation accuracy.
 
-test_bg0_b100, test_bg100_b0: Test accuracy under two different background–label correlation settings for CMNIST dataset.
+test_bg0_b100, test_bg100_b0: Test accuracy under two different test settings for CMNIST dataset.
 
 > **Note:** Refer to the paper for details of the experimental setup, evaluation protocol, and interpretation of the results.
